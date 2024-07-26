@@ -5,7 +5,7 @@ const Menu: React.FC = (): JSX.Element => {
   const [showDropDown, setShowDropDown] = useState<boolean>(false);
   const [selectappointment, setSelectAppointment] = useState<string>("");
   const appointment = () => {
-    return ["Consultation", "Examination", "Check-up", "Undecided"];
+    return ["Consultation", "Examination", "Check-up", "Other"];
   };
 
   /**
@@ -42,7 +42,7 @@ const Menu: React.FC = (): JSX.Element => {
       <div className="announcement">
         <div>
           {selectappointment
-            ? `You selected a ${selectappointment}`
+            ? `You selected ${selectappointment}`
             : "Please Select The Type of Appointment you are interested in"}
         </div>
       </div>

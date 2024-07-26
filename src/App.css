@@ -1,3 +1,52 @@
+/* Website base color */
 body {
-    background-color: #CDCDCD;
+    background-color:       #CDCDCD;
+}
+
+/* Button styling */
+button {
+    background-color:       #BFE7E9;
+    border-color:           #80D0F4;
+    border-radius:          3px;
+    border-width:           3px;
+}
+
+/* Navigation Bar Set up */
+.navBar {
+    display:                flex;
+    position:               sticky;
+    align-items:            center;
+    justify-content:        space-between;
+    top:                    0px;
+    background-blend-mode:  darken;
+    background-size:        cover;
+    color:                  white;
+    padding:                2px 2px;
+    background:             #80D0F4;
+}
+
+.nav-list {
+    display:                flex;
+    list-style:             none;
+}
+
+.nav-list li {
+    margin-right:           50px;
+}
+
+.nav-list li:last-child {
+    margin-right:           0;
+}
+
+/*Link settings before hovering */
+.nav-list li a {
+    text-decoration:        none;
+    color:                  #FFFFFF;
+    font-size:              20px;
+    transition:             color 0.3s ease-in-out;
+}
+
+/* Change color on hover */
+.nav-list li a:hover {
+    color:                  #818181;
 }
